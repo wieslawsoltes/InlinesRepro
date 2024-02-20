@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="InlinesRepro.MainWindow"
+        Title="InlinesRepro">
+  <TabControl>
+    
+    <TabItem Header="Inlines Content">
+      
+      <TextBlock>
+        <Run>Some text</Run>
+        <InlineUIContainer>
+          <StackPanel>
+            <Button Content="Button 1" />
+            <Button Content="Button 2" />
+          </StackPanel>
+        </InlineUIContainer>
+      </TextBlock>
+      
+    </TabItem>
+        
+    <TabItem Header="Inlines Directly">
+      
+      <TextBlock>
+        <TextBlock.Inlines>
+          <Run>Some text</Run>
+          <InlineUIContainer>
+            <StackPanel>
+              <Button Content="Button 1" />
+              <Button Content="Button 2" />
+            </StackPanel>
+          </InlineUIContainer>
+        </TextBlock.Inlines>
+      </TextBlock>
+      
+    </TabItem>
+    
+    <TabItem Header="Inlines InlineCollection">
+      
+      <TextBlock>
+        <TextBlock.Inlines>
+          <InlineCollection>
+            <Run>Some text</Run>
+            <InlineUIContainer>
+              <StackPanel>
+                <Button Content="Button 1" />
+                <Button Content="Button 2" />
+              </StackPanel>
+            </InlineUIContainer>
+          </InlineCollection>
+        </TextBlock.Inlines>
+      </TextBlock>
+      
+    </TabItem>
+    
+  </TabControl>
+</Window>

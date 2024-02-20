@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InlinesRepro", "InlinesRepro\InlinesRepro.csproj", "{BD20EEF2-7461-48BF-B220-833E047617CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{1F9B7687-213E-441B-8F1D-10D9A505AA3F}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD20EEF2-7461-48BF-B220-833E047617CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD20EEF2-7461-48BF-B220-833E047617CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD20EEF2-7461-48BF-B220-833E047617CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD20EEF2-7461-48BF-B220-833E047617CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
