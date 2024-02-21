@@ -54,6 +54,25 @@
       </TextBlock>
       
     </TabItem>
-    
+        
+    <TabItem Header="Inlines InlineCollection Resource">
+      
+      <TabItem.Resources>
+        <InlineCollection x:Key="InlineCollectionTest">
+          <Run>Some text</Run>
+          <Run></Run>
+          <InlineUIContainer>
+            <StackPanel>
+              <Button Content="Button 1" />
+              <Button Content="Button 2" />
+            </StackPanel>
+          </InlineUIContainer>
+        </InlineCollection>
+      </TabItem.Resources>
+      
+      <TextBlock Inlines="{StaticResource InlineCollectionTest}" />
+      
+    </TabItem>
+
   </TabControl>
 </Window>
